@@ -1,0 +1,458 @@
+
+<!doctype html>
+<html lang="en-US" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>saeedweb.com</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
+
+
+
+    <style>
+
+
+    </style>
+
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <script type="text/javascript">
+        window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/localhost\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.9.2"}};
+        /*! This file is auto-generated */
+        !function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css'  href='http://localhost/wp-includes/css/dist/block-library/style.min.css?ver=5.9.2' type='text/css' media='all' />
+    <style id='global-styles-inline-css' type='text/css'>
+        body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+    </style>
+    <link rel='stylesheet' id='ivory-search-styles-css'  href='http://localhost/wp-content/plugins/add-search-to-menu/public/css/ivory-search.min.css?ver=5.4.4' type='text/css' media='all' />
+    <link rel='stylesheet' id='bootstrap-css'  href='http://localhost/wp-content/themes/mytheme/css/bootstrap.rtl.css?ver=1.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='style-css'  href='http://localhost/wp-content/themes/mytheme/style.css?ver=5.9.2' type='text/css' media='all' />
+    <script type='text/javascript' src='http://localhost/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+    <script type='text/javascript' src='http://localhost/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+    <link rel="https://api.w.org/" href="http://localhost/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://localhost/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 5.9.2" />
+
+</head>
+<!--<body>-->
+<body class="home blog mytheme">
+
+<header class="navbar navbar-expand-md navbar-dark bg-danger fixed-top shadow">
+    <div class="container">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 <!--sidebar collapse-->" href="/">
+            <h5>saeedweb.com</h5>
+        </a>
+
+        <button class="navbar-toggler position-absolute d-md-none collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#sidebarMenu"
+                aria-controls="sidebarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--
+        saeed: search form without widget.
+        <div class="m-2">
+            <form method="get" action="http://localhost/">
+                <input name="s" class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+        -->
+
+
+        <!--    saeed: search form using widget.  -->
+        <!--		-->        <!--			-->        <!--		-->
+
+        <!--    saeed: search form using ivory search shortcode.  -->
+        <style type="text/css" media="screen">
+            #is-ajax-search-result-201 .is-highlight { background-color: #ffff07 !important;}
+            #is-ajax-search-result-201 .meta .is-highlight { background-color: transparent !important;}
+        </style>
+        <form data-min-no-for-search=1 data-result-box-max-height=400 data-form-id=201 class="is-search-form is-form-style is-form-style-1 is-form-id-201 is-ajax-search" action="http://localhost/" method="get" role="search" ><label for="is-search-input-201"><span class="is-screen-reader-text">Search for:</span><input  type="search" id="is-search-input-201" name="s" value="" class="is-search-input" placeholder="جستجو" autocomplete=off /><span class="is-loader-image" style="display: none;background-image:url(http://localhost/wp-content/plugins/add-search-to-menu/public/images/spinner.gif);" ></span></label><input type="submit" value="🔎" class="is-search-submit" /><input type="hidden" name="id" value="201" /></form>
+
+        <nav class="nav main-nav">
+            <div class="container">
+                <!--            https://github.com/wp-bootstrap/wp-bootstrap-navwalker -->
+
+                <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse"><ul id="menu-main-menu" class="nav nav-pills pull-right"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home active menu-item-14 nav-item"><a title="Home" href="http://localhost/" class="nav-link" aria-current="page">Home</a></li>
+                    <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-165 nav-item"><a title="about" href="http://localhost/about/" class="nav-link">about</a></li>
+                </ul></div>            </div>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <div class="row" style="margin-top: 58px">
+
+        <nav class="col-md-3 col-lg-2 d-md-block bg-success sidebar collapse">
+
+
+            <!--
+            saeed:
+            https://stackoverflow.com/questions/39047664/how-to-display-all-posts-in-wordpress
+            -->
+
+            <ul class="btn-toggle-nav list-unstyled scrollarea mx-2 bg-light rounded shadow">
+                <li>
+                    <a href="http://localhost/what-is-php/"
+                       class="link-dark rounded
+    	">
+                        what is php                </a>
+                </li>
+                <li>
+                    <a href="http://localhost/new55/"
+                       class="link-dark rounded
+    	">
+                        new55                </a>
+                </li>
+                <li>
+                    <a href="http://localhost/new44/"
+                       class="link-dark rounded
+    	">
+                        new44                </a>
+                </li>
+                <li>
+                    <a href="http://localhost/new33/"
+                       class="link-dark rounded
+    	">
+                        new33                </a>
+                </li>
+                <li>
+                    <a href="http://localhost/new22/"
+                       class="link-dark rounded
+    	">
+                        new22                </a>
+                </li>
+                <li>
+                    <a href="http://localhost/188/"
+                       class="link-dark rounded
+    	">
+                        new 11                </a>
+                </li>
+                <li>
+                    <a href="http://localhost/2222222/"
+                       class="link-dark rounded
+    	">
+                        2222222                </a>
+                </li>
+                <li>
+                    <a href="http://localhost/11111/"
+                       class="link-dark rounded
+    	">
+                        11111                </a>
+                </li>
+                <li>
+                    <a href="http://localhost/%d8%a7%db%8c%d9%86-%db%8c%da%a9-%d9%be%d8%b3%d8%aa-%d8%ac%d8%af%db%8c%d8%af-%d8%a7%d8%b3%d8%aa/"
+                       class="link-dark rounded
+    	">
+                        این یک پست جدید است                </a>
+                </li>
+                <li>
+                    <a href="http://localhost/%d8%b3%d9%88%d9%85%db%8c%d9%86-%d9%be%d8%b3%d8%aa/"
+                       class="link-dark rounded
+    	">
+                        سومین پست                </a>
+                </li>
+                <li>
+                    <a href="http://localhost/%d8%a8%d9%84%d8%a7%d8%aa%d8%a8%d9%84%d8%a7%d8%aa/"
+                       class="link-dark rounded
+    	">
+                        بلاتبلات                </a>
+                </li>
+                <li>
+                    <a href="http://localhost/%d9%be%d8%b3%d8%aa-%d8%b4%d9%85%d8%a7%d8%b1%d9%87-1/"
+                       class="link-dark rounded
+    	">
+                        پست شماره 1                </a>
+                </li>
+                <li>
+                    <a href="http://localhost/hello-world/"
+                       class="link-dark rounded
+    	">
+                        Hello world!                </a>
+                </li>
+            </ul>
+
+
+            <div class="comments mx-2 bg-light rounded shadow">
+                <h2>Tags</h2>
+                <div style="display: inline;">
+                    <button type="button" class="btn btn-secondary my-1 p-1">
+                        <a href="http://localhost/tag/3333/" title="3333"
+                           class="m-0  3333"
+                           style="text-decoration: none">3333                    </a>
+                    </button>
+                </div>
+                <div style="display: inline;">
+                    <button type="button" class="btn btn-secondary my-1 p-1">
+                        <a href="http://localhost/tag/bmw/" title="bmw"
+                           class="m-0  bmw"
+                           style="text-decoration: none">bmw                    </a>
+                    </button>
+                </div>
+                <div style="display: inline;">
+                    <button type="button" class="btn btn-secondary my-1 p-1">
+                        <a href="http://localhost/tag/foghany/" title="foghany"
+                           class="m-0  foghany"
+                           style="text-decoration: none">foghany                    </a>
+                    </button>
+                </div>
+                <div style="display: inline;">
+                    <button type="button" class="btn btn-secondary my-1 p-1">
+                        <a href="http://localhost/tag/laravel/" title="laravel"
+                           class="m-0  laravel"
+                           style="text-decoration: none">laravel                    </a>
+                    </button>
+                </div>
+                <div style="display: inline;">
+                    <button type="button" class="btn btn-secondary my-1 p-1">
+                        <a href="http://localhost/tag/pagination/" title="pagination"
+                           class="m-0  pagination"
+                           style="text-decoration: none">pagination                    </a>
+                    </button>
+                </div>
+                <div style="display: inline;">
+                    <button type="button" class="btn btn-secondary my-1 p-1">
+                        <a href="http://localhost/tag/php/" title="php"
+                           class="m-0  php"
+                           style="text-decoration: none">php                    </a>
+                    </button>
+                </div>
+                <div style="display: inline;">
+                    <button type="button" class="btn btn-secondary my-1 p-1">
+                        <a href="http://localhost/tag/tanha/" title="tanha"
+                           class="m-0  tanha"
+                           style="text-decoration: none">tanha                    </a>
+                    </button>
+                </div>
+                <div style="display: inline;">
+                    <button type="button" class="btn btn-secondary my-1 p-1">
+                        <a href="http://localhost/tag/tee/" title="tee"
+                           class="m-0  tee"
+                           style="text-decoration: none">tee                    </a>
+                    </button>
+                </div>
+                <div style="display: inline;">
+                    <button type="button" class="btn btn-secondary my-1 p-1">
+                        <a href="http://localhost/tag/%d9%be%db%8c-%d8%a7%da%86-%d9%be%db%8c%d9%88/" title="پی اچ پیو"
+                           class="m-0  %d9%be%db%8c-%d8%a7%da%86-%d9%be%db%8c%d9%88"
+                           style="text-decoration: none">پی اچ پیو                    </a>
+                    </button>
+                </div>
+                <div style="display: inline;">
+                    <button type="button" class="btn btn-secondary my-1 p-1">
+                        <a href="http://localhost/tag/%d8%ba%db%8c%d8%b1%d9%87/" title="غیره"
+                           class="m-0  %d8%ba%db%8c%d8%b1%d9%87"
+                           style="text-decoration: none">غیره                    </a>
+                    </button>
+                </div>
+            </div>
+
+        </nav>        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 <!--bg-light--> bg-warning">
+
+        <!--
+saeed:  keep two side-by-side div elements
+with same height using d-flex.
+http://jsfiddle.net/4dgaurav/hF72b/1/
+-->
+        <div class="bg-light m-3 rounded shadow p-3">
+            <article class="d-flex post">
+                <div class="container col-md-9">
+                    <ul class="meta">
+                        <li>By
+                            <a href="http://localhost/author/reza/">
+                                reza                                        </a>
+                        </li>
+                        <li>March 2, 2022 4:12 pm</li>
+                        <li>
+                            <a href="http://localhost/category/uncategorized/">Uncategorized</a>                                    </li>
+                    </ul>
+
+                    <a href="http://localhost/what-is-php/">
+                        <h3>what is php</h3>
+                    </a>
+
+                    <p>چرا  اسکات گابلت با دمبل را انجام می دهیم: آیا شما در عرصه بدنسازی یک تازه وارد هستید و زود خسته میشوید؟ یا دوست دارید که تمرین سخت و طولانی مدتی داشته باشید؟ با این حرکت اصلا مهم نیست که کدام یک هستید. اسکات گابلت با دمبل برای هر سطحی از بدنسازی مناسب می باشد. این حرکت به طور خاص [&hellip;]</p>
+                </div>
+                <div class="container d-flex flex-column-reverse col-md-3">
+
+                    <a href="http://localhost/what-is-php/" class="btn btn-primary btn-block">
+                        Read More                                </a>
+
+                    <div class="post-thumbnail">
+                    </div>
+
+                </div>
+            </article>
+            <div class="clr"></div>
+        </div>
+        <!--
+saeed:  keep two side-by-side div elements
+with same height using d-flex.
+http://jsfiddle.net/4dgaurav/hF72b/1/
+-->
+        <div class="bg-light m-3 rounded shadow p-3">
+            <article class="d-flex post">
+                <div class="container col-md-9">
+                    <ul class="meta">
+                        <li>By
+                            <a href="http://localhost/author/reza/">
+                                reza                                        </a>
+                        </li>
+                        <li>March 1, 2022 3:54 pm</li>
+                        <li>
+                            <a href="http://localhost/category/uncategorized/">Uncategorized</a>                                    </li>
+                    </ul>
+
+                    <a href="http://localhost/new55/">
+                        <h3>new55</h3>
+                    </a>
+
+                    <p>Pagination allows your user to&nbsp;page&nbsp;back and forth through multiple pages of content. WordPress can use pagination when: Viewing lists of posts when more posts exist than can fit on one page, or Breaking up longer posts by manually by using the following tag.1&lt;!&#8211;nextpage&#8211;&gt; Using Pagination to Navigate Post Lists&nbsp;#Using Pagination to Navigate Post Lists The most common use for pagination [&hellip;]</p>
+                </div>
+                <div class="container d-flex flex-column-reverse col-md-3">
+
+                    <a href="http://localhost/new55/" class="btn btn-primary btn-block">
+                        Read More                                </a>
+
+                    <div class="post-thumbnail">
+                    </div>
+
+                </div>
+            </article>
+            <div class="clr"></div>
+        </div>
+        <!--
+saeed:  keep two side-by-side div elements
+with same height using d-flex.
+http://jsfiddle.net/4dgaurav/hF72b/1/
+-->
+        <div class="bg-light m-3 rounded shadow p-3">
+            <article class="d-flex post">
+                <div class="container col-md-9">
+                    <ul class="meta">
+                        <li>By
+                            <a href="http://localhost/author/reza/">
+                                reza                                        </a>
+                        </li>
+                        <li>March 1, 2022 3:53 pm</li>
+                        <li>
+                            <a href="http://localhost/category/uncategorized/">Uncategorized</a>                                    </li>
+                    </ul>
+
+                    <a href="http://localhost/new44/">
+                        <h3>new44</h3>
+                    </a>
+
+                    <p>Pagination allows your user to&nbsp;page&nbsp;back and forth through multiple pages of content. WordPress can use pagination when: Viewing lists of posts when more posts exist than can fit on one page, or Breaking up longer posts by manually by using the following tag.1&lt;!&#8211;nextpage&#8211;&gt; Using Pagination to Navigate Post Lists&nbsp;#Using Pagination to Navigate Post Lists The most common use for pagination [&hellip;]</p>
+                </div>
+                <div class="container d-flex flex-column-reverse col-md-3">
+
+                    <a href="http://localhost/new44/" class="btn btn-primary btn-block">
+                        Read More                                </a>
+
+                    <div class="post-thumbnail">
+                    </div>
+
+                </div>
+            </article>
+            <div class="clr"></div>
+        </div>
+        <!--
+saeed:  keep two side-by-side div elements
+with same height using d-flex.
+http://jsfiddle.net/4dgaurav/hF72b/1/
+-->
+        <div class="bg-light m-3 rounded shadow p-3">
+            <article class="d-flex post">
+                <div class="container col-md-9">
+                    <ul class="meta">
+                        <li>By
+                            <a href="http://localhost/author/reza/">
+                                reza                                        </a>
+                        </li>
+                        <li>March 1, 2022 3:52 pm</li>
+                        <li>
+                            <a href="http://localhost/category/uncategorized/">Uncategorized</a>                                    </li>
+                    </ul>
+
+                    <a href="http://localhost/new33/">
+                        <h3>new33</h3>
+                    </a>
+
+                    <p>Pagination allows your user to page back and forth thr33333333ough multiple pages of content. WordPress can use pagination when: Viewing lists of posts when more posts exist than can fit on one page, or Breaking up longer posts by manually by using the following tag.1&lt;!&#8211;nextpage&#8211;&gt; Using Pagination to Navigate Post Lists&nbsp;#Using Pagination to Navigate Post Lists The most common use for pagination [&hellip;]</p>
+                </div>
+                <div class="container d-flex flex-column-reverse col-md-3">
+
+                    <a href="http://localhost/new33/" class="btn btn-primary btn-block">
+                        Read More                                </a>
+
+                    <div class="post-thumbnail">
+                    </div>
+
+                </div>
+            </article>
+            <div class="clr"></div>
+        </div>
+
+
+        <!--
+        https://fellowtuts.com/bootstrap/wordpress-pagination-bootstrap-4-style/
+        -->
+        <div class="container justify-content-center pull-left" style="direction: ltr">
+            <ul class="pagination justify-content-center ft-wpbs"><li class="page-item active"><span class="page-link"><span class="sr-only"></span>1</span></li><li class="page-item"><a class="page-link" href="http://localhost/page/2/">2</a></li><li class="page-item"><a class="page-link" href="http://localhost/page/3/">3</a></li><li class="page-item"><a class="page-link" href="http://localhost/page/4/">4</a></li></ul></nav><div class="pagination-info mb-5 text-center">[ <span class="text-muted">Page</span> 1 <span class="text-muted">of</span> 4 ]</div>                </div>
+
+
+
+
+    </main>
+
+    </div>
+</div>
+<footer class="footer mt-auto py-3 sticky-top bg-danger">
+    <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+</footer>
+
+<link rel='stylesheet' id='ivory-ajax-search-styles-css'  href='http://localhost/wp-content/plugins/add-search-to-menu/public/css/ivory-ajax-search.min.css?ver=5.4.4' type='text/css' media='all' />
+<script type='text/javascript' src='http://localhost/wp-content/themes/mytheme/js/bootstrap.bundle.min.js?ver=1.1' id='script-js'></script>
+<script type='text/javascript' id='ivory-search-scripts-js-extra'>
+    /* <![CDATA[ */
+    var IvorySearchVars = {"is_analytics_enabled":"1"};
+    /* ]]> */
+</script>
+<script type='text/javascript' src='http://localhost/wp-content/plugins/add-search-to-menu/public/js/ivory-search.min.js?ver=5.4.4' id='ivory-search-scripts-js'></script>
+<script type='text/javascript' id='ivory-ajax-search-scripts-js-extra'>
+    /* <![CDATA[ */
+    var IvoryAjaxVars = {"ajaxurl":"http:\/\/localhost\/wp-admin\/admin-ajax.php","ajax_nonce":"be66c5064f"};
+    /* ]]> */
+</script>
+<script type='text/javascript' src='http://localhost/wp-content/plugins/add-search-to-menu/public/js/ivory-ajax-search.min.js?ver=5.4.4' id='ivory-ajax-search-scripts-js'></script>
+<script type='text/javascript' src='http://localhost/wp-content/plugins/add-search-to-menu/public/js/is-highlight.min.js?ver=5.4.4' id='is-highlight-js'></script>
+
+<!--
+saeed: below tags are opened in header.php.
+-->
+</body>
+</html>
